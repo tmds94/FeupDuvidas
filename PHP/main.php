@@ -1,17 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FEUPDuvidas.com</title>
+</head>
+<body>
 <?php
-  include_once('init.php');
-  
-  include ('header.php');
-
+  include_once('ini.php');
+	include ('footer.php');
+	include ('areas.php');
+?>
   <section id="main">
 				<div id=two>
-  				<h4>My categories</h4>
+  				<h4>My Areas</h4>
 						
- 				 <ul class="categories">
-          							<li>Electronics</li>
-									<li>Computer Science</li>
-									<li>Physics</li>
-									<li>Mathematics</li>
+ 				 <ul class="areas">
+ 				 	<?php
+          				$areas = getAllCategories();
+					?>
      			</ul>
 					</div>
 					
@@ -27,6 +32,6 @@
 						
 					</div>
 			</section>
-  
-  include ('footer.php');
-?>
+</body>
+</html>
+
