@@ -1,6 +1,6 @@
 <?php
-  include_once('C:\Users\edu_p\Desktop\SIBD\TRAB\PHP\ini.php');
+  include_once('ini.php');
   
-  include ('C:\Users\edu_p\Desktop\SIBD\TRAB\PHP\header.php');
-  include ('C:\Users\edu_p\Desktop\SIBD\TRAB\PHP\login_form.php');
+  include ('header.php');
+  include ('login_form.php');
 ?>

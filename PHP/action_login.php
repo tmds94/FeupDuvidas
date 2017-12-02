@@ -1,6 +1,6 @@
 <?php
-  include_once('C:\Users\edu_p\Desktop\SIBD\TRAB\PHP\init.php');
-  include_once('C:\Users\edu_p\Desktop\SIBD\TRAB\PHP\user.php');
+  include_once('init.php');
+  include_once('user.php');
   
   $username = trim(strip_tags($_POST['username']));
   $password = sha1($_POST['password']);  
