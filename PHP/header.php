@@ -9,17 +9,18 @@
       <h1>FEUPDuvidas.com</h1>
     </header>
     <nav>
-      
-      <div id="session">
-			<?=$_SESSION['username']?> <a href="action_logout.php">Logout</a>
-		</div>
-     
+      <?php if (isset($_SESSION['username'])) { ?>
+        <div id="session">
+          <?=$_SESSION['username']?> <a href="action_logout.php">Logout</a>
+        </div>
+      <?php } else { ?>
 		<form action="action_login.php" method="post">
 		  <input type="text" placeholder="username" name="username">
 		  <input type="password" placeholder="password" name="password">
 		  <input type="submit" value="&gt;&gt;">
 		</form>
-	  <ul>
+		<?php } ?>
+		  <ul>
 		<?php if (isset($_SESSION['username'])) { ?> 
 		<li><a href="../members.php">Members</a></li>
 		<li><a href="../options.php">Options</a></li>
