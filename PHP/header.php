@@ -19,8 +19,7 @@
 		  <input type="password" placeholder="password" name="password">
 		  <input type="submit" value="&gt;&gt;">
 		</form>
-	  <?php } ?>
-      <ul>
+	  <ul>
 		<?php if (isset($_SESSION['username'])) { ?> 
 		<li><a href="../members.php">Members</a></li>
 		<li><a href="../options.php">Options</a></li>
