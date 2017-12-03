@@ -1,20 +1,26 @@
-/* -TESTE VISUAL STUDIO */ 
+/* -TESTE VISUAL STUDIO 
 
 
 header {
- 		padding: 0em;
+ 		padding: 1em;
 		margin: 0em;
-		color: red;
+		color: rgb(255, 255, 255);
 		font-size: 2em;
 		text-align: left;
 		font-family: serif;
+		background-color: rgba(33, 19, 59, 0.836);
+		
+		
 } 
+header img {
+	float: right;
+	width: 250px;
+	height: 250px;
+	background: rgba(85, 85, 85, 0);
+  }
 
 body {
-  		background: url('https://abrilexame.files.wordpress.com/2017/06/sd_2606.jpg?quality=70&strip=info&w=1000&h=666&crop=1') no-repeat center center fixed; 
- 		 -webkit-background-size: cover;
- 		 -moz-background-size: cover;
- 		-o-background-size: cover;
+  		background: url('https://abrilexame.files.wordpress.com/2017/06/sd_2606.jpg?quality=70&strip=info&w=1000&h=666&crop=1') no-repeat center center fixed;
   		background-size: cover;width: 60em;
   		margin: 0 auto;
 }
@@ -65,10 +71,10 @@ section#help {
 	font-weight: bold;
 	
 	
-}
+} */
 
 /* --------------------------------------LOGIN-------------------------------------------- */
-section#login_menu {
+/* section#login_menu {
    
 	color:white;
     padding: 2em;
@@ -100,10 +106,10 @@ section#login_menu label {
 	display: inline-block;
 	width: 10%;
 	text-align: left;
-} 
+}  */
 
 /* --------------------------------------REGISTO-------------------------------------------- */
-section#reg_menu {
+/* section#reg_menu {
    
 	color:white;
     padding: 2em;
@@ -127,7 +133,7 @@ section#reg_menu input[type="text"], input[type="password"]{
 	font-family: sans-serif;
 	color: #000000;
 	text-align: left;
-}
+} */
 
 section#reg_menu input[type="button"]{
 	/* falta meter este button do lado direito */
@@ -139,7 +145,7 @@ section#reg_menu input[type="button"]{
 
 
 /* --------------------------------------MAIN------------------------------------------- */
-div#main{
+/* div#main{
     overflow: hidden;
 	background-color:#8c2d19;
     padding: 1em;
@@ -155,11 +161,11 @@ div#sidebar {
 div#content {
     float: right;
     width: 55%;
-}   
+}    */
 
 
 /* --------------------------------------UPLOAD-------------------------------------------- */
-section#upload {
+/* section#upload {
 	background-color:#8c2d19;
     padding: 1em;
 	font-family: sans-serif;
@@ -196,7 +202,7 @@ section#upload input[type="textarea"]{
 	font-family: sans-serif;
 	color: #000000;
 	text-align: left;
-}
+} */
 
 /* --------------------------------------SEARCH FOR MEMBERS-------------------------------------------- */
 section#search {

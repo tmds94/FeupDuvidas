@@ -1,0 +1,60 @@
+*, body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+header {
+    background-color: rgba(11, 25, 59, 0.774);
+    height: 90px;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.header_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header_btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo{
+    margin-right: 30px;
+}
+.logo img {
+    width: 70px;
+}
+
+.btn {
+    margin: 10px;
+}
+.btn:hover {
+   background-color: white;
+   color: black;
+   padding: 10px;
+}
+.middle {
+    background: url(https://abrilexame.files.wordpress.com/2017/06/sd_2606.jpg?quality=70&strip=info&w=1000&h=666&crop=1) no-repeat center center fixed;
+    background-size: cover;
+    height: 700px;
+}
+
+.footer {
+    background-color:  rgba(11, 25, 59, 0.774);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
