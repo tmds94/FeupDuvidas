@@ -1,11 +1,15 @@
-*, body{
+html,
+body {
+    height: 100%;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    
 }
 
-header {
-    background-color: rgba(11, 25, 59, 0.774);
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background-color: rgba(8, 26, 68, 0.897);
     height: 90px;
     display: flex;
     color: white;
@@ -14,6 +18,9 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
+    position: fixed;
+    top:0px;
+    width: 100%;
 }
 
 .header_logo {
@@ -28,33 +35,60 @@ header {
     flex-direction: row;
     align-items: center;
     text-decoration: none;
+    padding-right: 30px;
+
 }
 
-.logo{
+
+}
+
+.logo {
     margin-right: 30px;
 }
+
 .logo img {
     width: 70px;
 }
 
 .btn {
-    margin: 10px;
+    padding: 20px;
 }
+
 .btn:hover {
-   background-color: white;
-   color: black;
-   padding: 10px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    
 }
+
 .middle {
     background: url(https://abrilexame.files.wordpress.com/2017/06/sd_2606.jpg?quality=70&strip=info&w=1000&h=666&crop=1) no-repeat center center fixed;
     background-size: cover;
-    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.middlebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 222, 179, 0.863);
+    height: 230px;
+    width: 800px;
+    color: rgb(58, 128, 116);
+    ;
 }
 
 .footer {
-    background-color:  rgba(11, 25, 59, 0.774);
+    background-color:rgba(8, 26, 68, 0.897);
     color: white;
     justify-content: center;
     align-items: center;
     display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
+.invert { filter: invert(100%); }
