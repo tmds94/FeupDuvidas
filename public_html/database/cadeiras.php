@@ -31,7 +31,7 @@ function getCoursesRamo($year, $semestre, $ramo)
 {
 	global $conn;
 
-	$stmt=$conn->prepare('SELECT * FROM cadeiras WHERE ano=? AND semestre= ? AND ramo=? IS NULL' );
+	$stmt=$conn->prepare('SELECT * FROM cadeiras WHERE ano=? AND semestre= ? AND ramo=? AND espec="Comum"');
 	$stmt->execute(array($year,$semestre,$ramo));
 	return $stmt->fetchAll();
 }
