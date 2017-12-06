@@ -21,6 +21,7 @@
 					<?php for($semestre=1 ; $semestre<=2;$semestre++) {?>
 					<li><a href="#"><?php print($semestre)?>ºSemestre</a>
 					<ul>
+
 					<?php $courses=getCourses($year,$semestre);
 					      foreach($courses as $course) {
 					 ?>
@@ -39,6 +40,12 @@
 						foreach($ramos as $ramo){
 					?>
 					<li><a href="#"><?php print($ramo['ramo'])?></a>
+				
+					<ul>
+						<?php $especs=getEspec($ramos);
+							foreach($especs as $espec){?>
+							<li><a href="#"><?php print($espec['espec'])?></a>
+					
 					<ul>
 						<?php for($semestre=1 ; $semestre<=2;$semestre++) {?>
 						<li><a href="#"><?php print($semestre)?>ºSemestre</a>
@@ -52,11 +59,15 @@
 						</li>
 						<?php } ?>
 					</ul>
+				</ul>
+			</li>
+			<?php } ?>
 					</li>
 					<?php } ?>
 
 				</ul>
 				<?php } ?>
+
 				<li><a href="forum.php">Forum</a></li>
 				<li><a href="search.php"> <i class="fa fa-search" aria-hidden="true"></i> </a>
 				<li style="float:right"><a class="logout" href="action_logout.php">Logout</a></li>
