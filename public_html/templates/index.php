@@ -13,6 +13,7 @@
 				</div>
 				<div class="logo_text"> FEUPDuvidas.com</div>
 			</div>
+			
 			<?php if ( $_ERROR_MESSAGE) { ?>
 	   		 <div class="error_index">
 	    		 <h4><?=  $_ERROR_MESSAGE; unset($_ERROR_MESSAGE)?></h4>
