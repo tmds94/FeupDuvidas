@@ -31,26 +31,8 @@ function getCoursesRamo($year, $semestre, $ramo)
 {
 	global $conn;
 
-	$stmt=$conn->prepare('SELECT * FROM cadeiras WHERE ano=? AND semestre= ? AND ramo=? AND espec IS NULL');
+	$stmt=$conn->prepare('SELECT * FROM cadeiras WHERE ano=? AND semestre= ? AND ramo=?' );
 	$stmt->execute(array($year,$semestre,$ramo));
-	return $stmt->fetchAll();
-}
-
-function getEspec($ramo)
-{
-	global $conn;
-
-	$stmt=$conn->prepare('SELECT DISTINCT * FROM cadeiras WHERE ramo = ? AND ano=4 AND semestre =1 AND espec IS NOT NULL');
-	$stmt->execute(array($ramo));
-	return $stmt->fetchAll();
-}
-
-function getEspecCourses($espec,$ramo)
-{
-	global $conn;
-
-	$stmt=$conn->prepare('SELECT DISTINCT id,nome FROM cadeiras WHERE espec = ? AND ramo=?');
-	$stmt->execute(array($espec,$ramo));
 	return $stmt->fetchAll();
 }
 

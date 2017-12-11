@@ -2,7 +2,7 @@
 		<title>FEUPDuvidas.com</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/stylezas.css">
-		<link rel="stylesheet" href="css/font/font.css">
+		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -13,7 +13,6 @@
 				</div>
 				<div class="logo_text"> FEUPDuvidas.com</div>
 			</div>
-			
 			<?php if ( $_ERROR_MESSAGE) { ?>
 	   		 <div class="error_index">
 	    		 <h4><?=  $_ERROR_MESSAGE; unset($_ERROR_MESSAGE)?></h4>

@@ -9,6 +9,7 @@
     $_SESSION['email'] = $email;
 	 $id=getIdByEmail($email);
 	$_SESSION['id']=$id['id'];
+  $_SESSION['nome']=$id['nome'];
 	header('Location: menu.php');
   } else {
     $_SESSION['error_message'] = "Login failed!";

@@ -2,7 +2,7 @@
 function getCategoryName($cat_id){
    global $conn;
 
-    $stmt = $conn->prepare('SELECT * FROM categories WHERE id=?');
+    $stmt = $conn->prepare('SELECT * FROM cats WHERE id=?');
     $stmt->execute(array($cat_id));
 
     return $stmt->fetch();
@@ -11,9 +11,9 @@ function getCategoryName($cat_id){
 function getAllCategories(){
 	global $conn;
 
-	$stmt=$conn->prepare('SELECT * FROM categories');
+	$stmt=$conn->prepare('SELECT * FROM cats');
 	$stmt->execute();
 	return $stmt->fetchAll();
-
 }
+
 ?>

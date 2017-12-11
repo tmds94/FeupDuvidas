@@ -5,9 +5,9 @@
     $dmy = $date['mon'].'-'.$date['mday'].'-'.$date['year'];
     $time = $date['hours'] . ':' . $date['minutes'] . ':' . $date['seconds'] ;
     $user = getuserid($owner);
-  $id = $user['id'];
+    $id = $user['id'];
     $stmt = $conn->prepare('INSERT INTO forum VALUES (DEFAULT, ?, ?, ?, ?, ?, ?)');
-    $stmt->execute(array( $category, $subject, $text, $id, $dmy, $time));
+    $stmt->execute(array( $category, $subject, $text, $dmy, $time, $id));
   }
 
   function getuserid($owner) {
@@ -57,7 +57,7 @@
     echo($dmy);
     echo($time);
     $stmt = $conn->prepare('INSERT INTO comments VALUES (DEFAULT, ?, ?, ?, ?, ?)');
-    $stmt->execute(array( $text, $topic, $id, $dmy, $time));
+    $stmt->execute(array( $topic, $text, $dmy, $time, $id));
   }
 
   function getNumberOfTopics($category)

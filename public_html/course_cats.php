@@ -1,8 +1,8 @@
 <?php
   include_once('config/init.php');
-  include_once('database/UCs.php');
-  include_once('database/categories.php');
-	if (!$_SESSION['emailup']) {
+  include_once('database/cadeiras.php');
+  include_once('database/cats.php');
+	if (!$_SESSION['email']) {
     die(header("Location: index.php"));
   }
   $uc_id = $_GET['uc_id'];
