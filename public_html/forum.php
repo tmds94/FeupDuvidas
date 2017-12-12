@@ -6,7 +6,6 @@
     die(header("Location: index.php"));
   }
   include ('templates/header.php');
-  include('templates/side_menu.php');
   include('templates/forum.php');
   include ('templates/footer.php');
 ?>

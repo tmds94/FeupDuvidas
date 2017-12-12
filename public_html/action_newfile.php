@@ -3,6 +3,8 @@
   include_once('database/cadeiras.php');
   include_once('database/files.php');
 
+//https://www.w3schools.com/php/php_file_upload.asp
+
 $uc_id = $_POST['uc_id'];
 $cat_id = $_POST['cat_id'];
 if(!$file_name=$_FILES['file']['name'])

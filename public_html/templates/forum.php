@@ -5,7 +5,7 @@
 <head>
 		<title>FEUPDuvidas</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/stylezas.css">
 	</head>
 
 	<body>

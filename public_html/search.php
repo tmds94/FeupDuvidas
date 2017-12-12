@@ -6,9 +6,9 @@
     die(header("Location: index.php"));
   }
   $categories = getAllCategories();
+  $cadeiras=getAllCourses();
 
   include ('templates/header.php');
- include ('templates/side_menu.php');
   include ('templates/search.php');
   include ('templates/footer.php');
 ?>

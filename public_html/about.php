@@ -1,8 +1,7 @@
 <head>
   <title>FEUPDuvidas.com</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/font/font.css">
+  <link rel="stylesheet" href="css/stylezas.css">
 </head>
 
 <div id="header">

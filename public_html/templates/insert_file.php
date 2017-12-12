@@ -1,7 +1,7 @@
 <head>
 		<title>FEUPDuvidas </title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/cadeira.css">
+		<link rel="stylesheet" href="css/stylezas.css">
 		<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <div id ="add">

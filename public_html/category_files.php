@@ -15,7 +15,6 @@
   $category=getCategoryName($cat_id);
   $count=getFileCountFromCourse($uc_id, $cat_id);
   include ('templates/header.php');
- include('templates/side_menu.php');
   include ('templates/category_files.php');
   include ('templates/footer.php');
 ?>

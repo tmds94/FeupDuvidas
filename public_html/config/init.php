@@ -11,8 +11,8 @@
 
 
  if (isset($_SESSION['error_message'])) {
-    $_ERROR_MESSAGE = $_SESSION['error_message'];
-    unset($_SESSION['error_message']);
+    $_ERROR_MESSAGE = $_SESSION['error_message']; //isset checks if the variable exists
+    unset($_SESSION['error_message']); //unset() destroys the specified variables
   }
 
   if (isset($_SESSION['success_message'])) {

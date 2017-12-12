@@ -1,8 +1,6 @@
-<body>
-  <footer>
-    <ul>
-      <li><a href="about.php">About Us</a></li>
-      <h5>Made by Eduardo Sobrinho & Tiago Simoes &reg</h5>
-    </ul>
-  </footer>
+</body>
+  <div class="footer">
+    <h5>@SIBD2017, FEUP2017, Grupo24</h5>
+    <li><a href="about.php">About Us</a></li>
+  </div>
 </body>

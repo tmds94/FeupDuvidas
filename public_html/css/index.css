@@ -1,0 +1,126 @@
+body
+{
+	background: url("images/feup.jpg");
+	background-size: cover; 
+  height: 100%;
+  margin: 0;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.header_index {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 90px;
+    display: flex;
+    color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    position: fixed;
+    top:0px;
+    width: 100%;
+}
+
+.header_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    margin-right: 30px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.main_index{
+  background-color: rgba(255, 255, 255, 0.5);
+    height: 90px;
+    display: flex;
+    color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    position: fixed;
+    top:0px;
+    width: 100%;
+}
+
+.login_index{
+  position:fixed;
+   top:10;
+   right:20;
+}
+
+.about_index{
+  position: fixed;
+  top:50;
+  left:100;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.register_index{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 222, 179, 0.863);
+  height: 230px;
+  width: 800px;
+  color: rgb(58, 128, 116)
+}
+
+.middlebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 222, 179, 0.863);
+    height: 230px;
+    width: 800px;
+    color: rgb(58, 128, 116);
+    
+}
+
+.footer {
+    background-color:rgba(8, 26, 68, 0.897);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.error_index  {
+  color:red;
+  text-decoration:underline;
+  text-align:center;
+  font-size:20px;
+
+}
+
+.success_index {
+  color:green;
+  text-decoration:underline;
+  text-align:center;
+  font-size:20px;
+}
+
+
+

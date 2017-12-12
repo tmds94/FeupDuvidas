@@ -10,7 +10,6 @@
 
   $categories=getAllCategories();
   include ('templates/header.php');
-include('templates/side_menu.php');
   include ('templates/course_cats.php');
   include ('templates/footer.php');
 ?>

@@ -1,7 +1,7 @@
 <head>
 		<title>FEUPDuvidas</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/cadeira.css">
+		<link rel="stylesheet" href="css/stylezas.css">
 	</head>
 
 <section id = "search">
@@ -10,6 +10,14 @@
 <form method="get" action="search_results.php">
     <label> Nome do Ficheiro:
       <input type="text" name="name" value="">
+    </label>
+    <label> Cadeira:
+      <select name="uc_id">
+        <option value="">--</option>
+      <?php foreach ($cadeiras as $cadeira) { ?>
+        <option value="<?=$cadeira['id']?>"><?=$cadeira['nome']?></option>
+      <?php } ?>
+      </select>
     </label>
     <label> Categoria:
       <select name="cat_id">

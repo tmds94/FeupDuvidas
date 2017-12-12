@@ -26,20 +26,25 @@ function getFiles($file_id){
 
    	return $stmt->fetch();
 }
-function getFilesBySearch($name, $cat_id) {
+function getFilesBySearch($name, $cat_id, $uc_id) {
     global $conn;
 
     $query = 'SELECT * FROM files WHERE 1=1';
     $params = array();
 
     if ($name) {
-      $query .= ' AND filename ILIKE ?';
+      $query .= ' AND filename ILIKE ?'; //ILIKE used fo case insensitiveness //.= used to concatenate the strings
       $params[] = '%' . $name . '%';
     }
 
     if ($cat_id) {
       $query .= ' AND categoria = ?';
       $params[] = $cat_id;
+    }
+
+    if($uc_id){
+      $query .= ' AND uc_id = ?';
+      $params[] = $uc_id;
     }
 
     $stmt = $conn->prepare($query);

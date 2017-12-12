@@ -4,7 +4,6 @@
   include_once('database/forum.php');
   include_once('database/user.php');
   include ('templates/header.php');
-  include('templates/side_menu.php');
   include('templates/view_topic.php');
   include ('templates/footer.php');
 ?>

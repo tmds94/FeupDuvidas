@@ -8,7 +8,6 @@
 	$categories=getAllCategories();
 
   include ('templates/header.php');
- include ('templates/side_menu.php');
   include ('templates/insert_file.php');
   include ('templates/footer.php');
 ?>
