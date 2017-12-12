@@ -6,8 +6,7 @@
 
 	<div id="empty">
 		<?php if (!$files) { ?>
-		<i class="fa fa-folder-open"></i><br></br>
-		<h2 class="fa fa-frown-o"> A pasta está vazia</h2>
+		<h2> A pasta está vazia</h2>
 	<?php } ?>
 
 	</div>
@@ -33,18 +32,5 @@
 		<input type="hidden" name="cat_id" value="<?=$cat_id?>"></input>
 		<input type="submit" value="Adicionar ficheiro">
   	</form>
-
-	<div id="pagination">
-   		 <?php if ($page != 0) { ?>
-   		 <a href="category_files.php?cat_id=<?=$cat_id?>&uc_id=<?=$uc_id?>&page=<?=$page-1?>"><i class="fa fa-arrow-left"></i></a> 
-   		 <?php } ?>
-
-   		 <?=$page+1?> 
-    
-   		 <?php if (($page + 1) * $PAGE_SIZE < $count) { ?>
-    		<a href="category_files.php?cat_id=<?=$cat_id?>&uc_id=<?=$uc_id?>&page=<?=$page+1?>"><i class="fa fa-arrow-right"></i></a>
-    		<?php } ?>
-  		</div>
-
 
 </section>
