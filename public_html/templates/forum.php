@@ -18,15 +18,23 @@
             </tr>
           </thead>
           <tbody>
-          <?php for ($year= 1; $year <= 2; $year++) { ?>
+          
               <tr>
-                <td colspan="4"> <a href="topics.php?category=<?=$year?>ºAno"> <?=$year?> ºAno </td>
-                <?php $NofTopics=getNumberOfTopics($year.'ºAno');
-                   $lastTopic=getLastTopic($year.'ºAno'); ?>
+                <td colspan="4"> <a href="topics.php?category=<?=$year?>ºAno"> 1ºAno </td>
+                <?php $NofTopics=getNumberOfTopics('1ºAno');
+                   $lastTopic=getLastTopic('1ºAno'); ?>
                      <td> <?=$NofTopics['count']?> </td>
                 <td> <?=$lastTopic['subject']?> </td>
               </tr>
-          <?php } ?>
+
+              <tr>
+                <td colspan="4"> <a href="topics.php?category=<?=$year?>ºAno"> 2ºAno </td>
+                <?php $NofTopics=getNumberOfTopics('2ºAno');
+                   $lastTopic=getLastTopic('2ºAno'); ?>
+                     <td> <?=$NofTopics['count']?> </td>
+                <td> <?=$lastTopic['subject']?> </td>
+              </tr>
+          
           <?php foreach($ramos as $ramo){ ?>
             <tr>
               <td colspan="4"> <a href="topics.php?category=<?=$ramo['ramo']?>"> <?=$ramo['ramo'] ?> </td>
