@@ -20,7 +20,7 @@
           <tbody>
           
               <tr>
-                <td colspan="4"> <a href="topics.php?category=<?=$year?>ºAno"> 1ºAno </td>
+                <td colspan="4"> <a href="topics.php?category=1ºAno"> 1ºAno </td>
                 <?php $NofTopics=getNumberOfTopics('1ºAno');
                    $lastTopic=getLastTopic('1ºAno'); ?>
                      <td> <?=$NofTopics['count']?> </td>
@@ -28,7 +28,7 @@
               </tr>
 
               <tr>
-                <td colspan="4"> <a href="topics.php?category=<?=$year?>ºAno"> 2ºAno </td>
+                <td colspan="4"> <a href="topics.php?category=2ºAno"> 2ºAno </td>
                 <?php $NofTopics=getNumberOfTopics('2ºAno');
                    $lastTopic=getLastTopic('2ºAno'); ?>
                      <td> <?=$NofTopics['count']?> </td>
@@ -53,6 +53,5 @@
           </tr>
         </tbody>
       </table>
-		<br></br><br></br><br></br><br></br>
 	</div>
 	</body>
