@@ -21,7 +21,7 @@
       <article> <?=$row['text']?> </article>
     </div>
 
-    <h5> Comentários: </h5>
+    <h4> Comentários: </h4>
        <?php foreach ($comments as $comment) {?>
         <div class="comentarios">
           <lable> <? $user = getUserbyId($comment['userid']); ?>
