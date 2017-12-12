@@ -1,13 +1,10 @@
-<head>
-  <title>FEUPDuvidas.com</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/stylezas.css">
-</head>
-
-<div id="header">
-  <h1>FEUPDuvidas.com</h1>
-</div>
-
 <?php
+  include_once('config/init.php');
+  include_once('database/cadeiras.php');
+  if (!$_SESSION['email']) {
+    die(header("Location: index.php"));
+  }
+  include ('templates/header.php');
   include('templates/about.php');
+  include ('templates/footer.php');
 ?>

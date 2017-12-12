@@ -1,5 +1,5 @@
 <div id="about">
-	<h1> About Us </h1>
+	<h1> FEUPDuvidas.com</h1>
 	<p> Este website foi desenvolvido no âmbito da unidade curricular de SIBD. Pretendeu-se desenvolver uma plataforma onde os alunos poderão pôr as suas questões e problemas relativos a diversas matérias lecionadas na FEUP. </p>
 	
 	<h2> Criadores </h2>
